@@ -29,10 +29,15 @@ mongoose
   .then(() => {
     console.log("MongoDB connected");
 
-    app.listen(process.env.PORT, () => {
-      console.log(`Server running on port ${process.env.PORT}`);
-    });
+    // Local machine par server start hoga
+    if (require.main === module) {
+      app.listen(process.env.PORT, () => {
+        console.log(`Server running on port ${process.env.PORT}`);
+      });
+    }
   })
   .catch((error) => {
     console.log("MongoDB connection error:", error);
   });
+
+module.exports = app;

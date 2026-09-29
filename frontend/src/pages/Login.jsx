@@ -23,7 +23,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://small-ecommerce-sffc.onrender.com/api/auth/login",
+  "/api/auth/login",
         formData,
         {
           withCredentials: true,

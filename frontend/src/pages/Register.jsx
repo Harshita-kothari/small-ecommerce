@@ -26,9 +26,9 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "https://small-ecommerce-sffc.onrender.com/api/auth/register",
-        formData
-      );
+  "/api/auth/register",
+  formData
+);
 
       alert(response.data.message);
 
