@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/logout",
+       "https://small-ecommerce-sffc.onrender.com/api/auth/logout",
         {},
         {
           withCredentials: true,

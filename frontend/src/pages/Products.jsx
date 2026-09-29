@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Products.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://small-ecommerce-sffc.onrender.com/api";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
